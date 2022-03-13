@@ -1,0 +1,107 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.custom-landing-bg {
+  background: linear-gradient(118.62deg, #F89D18 0%, #F05134 100%);
+}
+
+.custom-rotate-bg {
+  background: url('./assets/bg.svg') no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 60%;
+  z-index: 1;
+}
+
+.logo {
+  height: 308.4011535644531px;
+  width: 650.9590454101562px;
+  padding-top: 60px;
+}
+
+.landing-text p {
+  font-family: Gilroy;
+  font-size: 70px;
+  line-height: 80px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  color: white;
+}
+
+.play-now-btn {
+  width: 100%;
+  padding: 0 50px;
+  height: 100px;
+  background: white;
+  border-radius: 5px;
+  color: #FF5E00;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+
+.replay-now-btn {
+  width: 100%;
+  padding: 0 50px;
+  height: 100px;
+  background: #FF5E00;
+  border-radius: 5px;
+  color: #ffff;
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.question {
+  font-weight: bold;
+  color: #FF5E00;
+  font-size: 40px;
+}
+
+.question-1-text {
+  font-family: "Gilroy";
+  font-weight: "semibold";
+  font-size: 60px;
+  text-align: left;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+
+.res-desc {
+  font-family: "Gilroy";
+  font-weight: "semibold";
+  font-size: 40px;
+  text-align: left;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.res-heading {
+  color: #FF5E00;
+  font-size: 50px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.res-info {
+  font-family: "Gilroy";
+  font-size: 16px;
+}
+
+.res-info strong {
+  font-size: 30px;
+}
+
+.res-info p {
+  font-size: 25px;
+}
+
+.res-info small {
+  font-size: 20px;
+}
