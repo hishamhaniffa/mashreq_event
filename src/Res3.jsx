@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Lottie from "lottie-react";
 import ResImage from './assets/res3.json';
 import ImageLeft from './assets/res3/1.png';
@@ -16,27 +16,28 @@ const Res3 = () => {
     }
     return (
         <div className="flex w-full h-screen">
-            <div className="flex flex-col items-center w-full z-10 px-8">
-                <div className="flex w-14/12 h-2/5 pb-20 loader-image question item-center justify-center pt-16">
-                    <Lottie animationData={ResImage} />
+            <div className="flex flex-col items-center w-full z-10 res-container">
+                <div className="flex w-full justify-center res-top-image">
+                    <Lottie animationData={ResImage} loop={true}/>
                 </div>
-                <div className="flex w-full h-max pb-4 text-left res-heading">
+                <div className="flex w-full text-left res-heading">
                     <p>You are an <br /><strong>aspirational dreamer!</strong></p>
                 </div>
-                <div className="flex w-full res-desc pb-4">
+                <div className="flex w-full res-desc">
                     <p>You love to strike out on your own and not follow the crowd. When it comes to your finances you want your offers and benefits to work hard for you.</p>
                 </div>
-                <div className="flex w-11/12 h-4/6 text-left">
-                    <div className="flex w-6/12">
-                        <img src={ImageLeft} />
-                    </div>
-                    <div className="flex flex-col w-6/12 res-info justify-around pb-6">
+                <div className="flex w-full">
+                    <div className="res-image">
+                    <img src={ImageLeft}/>
+                        </div>
+
+                    <div className="flex flex-col w-8/12 res-info justify-around">
                         <strong className="w-9/12 mb-6">Your Mashreq match!</strong>
-                        <p className="w-10/12">You would rock the <strong>Platinum Elite card</strong> with great lifestyle benefits.</p>
+                        <p className="w-9/12">You would rock the <br /><strong>Platinum Elite card</strong> <br />with great lifestyle benefits.</p>
                         <small className="mt-20 italic">Scan the QR to learn more.</small>
                     </div>
                 </div>
-                <div className="flex w-full handleClick">
+                <div className="flex w-full">
                     <button onClick={handleClick} className="replay-now-btn">Play again</button>
                 </div>
             </div>

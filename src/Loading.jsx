@@ -4,6 +4,7 @@ import Loader from './assets/loading.json';
 import MashreqLogoWhite from './assets/mashreq-logo-orange.png';
 import { useNavigate } from "react-router-dom";
 import { StateContext } from "./store/context";
+import Logo from "./components/Logo";
 
 
 const Loading = () => {
@@ -12,7 +13,7 @@ const Loading = () => {
     const calc = () => {
         console.log(q1, q2, q3, q4, q5);
         const total = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5);
-        console.log('t', total);
+        
         if (total >= 5 && total <= 7) {
             navigate('/res1');
         } else if (total >= 8 && total <= 12) {
@@ -32,15 +33,13 @@ const Loading = () => {
         }, 1000)
     }, []);
     return (
-        <div className="flex w-full h-screen">
-            <div className="flex flex-col items-center w-full z-10 px-8">
-                <div className="logo w-1/4 h-max pb-28">
-                    <img src={MashreqLogoWhite} />
+        <div className="flex q-container">
+            <div className="flex flex-col items-center w-full z-10">
+                <Logo image={MashreqLogoWhite} />
+                <div className="flex loader-image">
+                    <Lottie animationData={Loader} loop={true}/>
                 </div>
-                <div className="flex w-11/12 h-max pb-24 loader-image question">
-                    <Lottie animationData={Loader} />
-                </div>
-                <div className="flex w-full question-1-text pb-4 justify-center">
+                <div className="flex justify-center w-full loading-text">
                     Calculating......
                 </div>
             </div>

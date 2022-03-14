@@ -18,27 +18,25 @@ import Reducer, { initialState } from "./store/reducer";
 const App = () => {
   const [state, dispatch] = useReducer(Reducer, initialState)
   return (
-    <div className="App">
-      <Router>
-        <DispatchContext.Provider value={dispatch}>
-          <StateContext.Provider value={state}>
-            <Routes>
-              <Route path="/" element={<Landing />} />
-              <Route path="/q1" element={<Q1 />} />
-              <Route path="/q2" element={<Q2 />} />
-              <Route path="/q3" element={<Q3 />} />
-              <Route path="/q4" element={<Q4 />} />
-              <Route path="/q5" element={<Q5 />} />
-              <Route path="/loading" element={<Loading />} />
-              <Route path="/res1" element={<Res1 />} />
-              <Route path="/res2" element={<Res2 />} />
-              <Route path="/res3" element={<Res3 />} />
-              <Route path="/res4" element={<Res4 />} />
-            </Routes>
-          </StateContext.Provider>
-        </DispatchContext.Provider>
-      </Router>
-
+    <div className="App"><DispatchContext.Provider value={dispatch}>
+      <StateContext.Provider value={state}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/q1" element={<Q1 />} />
+            <Route path="/q2" element={<Q2 />} />
+            <Route path="/q3" element={<Q3 />} />
+            <Route path="/q4" element={<Q4 />} />
+            <Route path="/q5" element={<Q5 />} />
+            <Route path="/loading" element={<Loading />} />
+            <Route path="/res1" element={<Res1 />} />
+            <Route path="/res2" element={<Res2 />} />
+            <Route path="/res3" element={<Res3 />} />
+            <Route path="/res4" element={<Res4 />} />
+          </Routes>
+        </Router>
+      </StateContext.Provider>
+    </DispatchContext.Provider>
     </div>
   );
 };
