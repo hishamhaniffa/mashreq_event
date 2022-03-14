@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Image1 from './assets/q1/1.png';
-import Image2 from './assets/q1/2.png';
-import Image3 from './assets/q1/3.png';
-import Image4 from './assets/q1/4.png';
+import Image1 from './assets/q1/1.jpg';
+import Image2 from './assets/q1/2.jpg';
+import Image3 from './assets/q1/3.jpg';
+import Image4 from './assets/q1/4.jpg';
 import MashreqLogo from './assets/mashreq-logo-orange.png';
 import { useNavigate } from 'react-router-dom';
 import { DispatchContext } from "./store/context";
@@ -37,7 +37,7 @@ const Q1 = () => {
                     </div>
                 </div>
                 <div className="flex w-full">
-                    <div className="flex bg-orange-500 w-1/5 self-start loading-status"></div>
+                    <div className="flex w-1/5 self-start loading-status"></div>
                 </div>
             </div>
         </div >

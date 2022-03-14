@@ -14,6 +14,7 @@ import Res3 from './Res3';
 import Res4 from './Res4';
 import { DispatchContext, StateContext } from "./store/context";
 import Reducer, { initialState } from "./store/reducer";
+import Questions from './Questions';
 
 const App = () => {
   const [state, dispatch] = useReducer(Reducer, initialState)
@@ -23,6 +24,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/question" element={<Questions />} />
             <Route path="/q1" element={<Q1 />} />
             <Route path="/q2" element={<Q2 />} />
             <Route path="/q3" element={<Q3 />} />

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Image1 from './assets/q4/1.png';
-import Image2 from './assets/q4/2.png';
-import Image3 from './assets/q4/3.png';
-import Image4 from './assets/q4/4.png';
+import Image1 from './assets/q4/1.jpg';
+import Image2 from './assets/q4/2.jpg';
+import Image3 from './assets/q4/3.jpg';
+import Image4 from './assets/q4/4.jpg';
 import MashreqLogoWhite from './assets/mashreq-logo-orange.png';
 import { useNavigate } from 'react-router-dom';
 import { DispatchContext } from "./store/context";

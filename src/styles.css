@@ -76,11 +76,12 @@
 }
 
 .question-1-text {
-  font-weight: "semibold";
   font-size: 98.78px;
   text-align: left;
   line-height: 121.01px;
   padding-bottom: 123.45px;
+  height: 242px;
+  font-weight: 600;
 }
 .question-item {
   padding-bottom: 130.39px;
@@ -92,6 +93,7 @@
   width: 350.39990234375px;
   background: #FF6F00;
   border-radius: 93.8456px;
+  transition: all 0.2s ease-in-out;
 }
 
 
